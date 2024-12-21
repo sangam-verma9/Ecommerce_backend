@@ -15,15 +15,18 @@ app.use(cookiep());
 const cors = require("cors");
 
 // app.use(cors({ origin: "*" }));
-app.use(
-  cors({
-    origin: "https://ecommerce-sangam.netlify.app",
-    methods: ["GET", "PUT", "POST", "OPTIONS", "DELETE", "PATCH"],
-    allowedHeaders: ["Content-Type", "Authorization", "x-csrf-token"],
-    credentials: true,
-    exposedHeaders: ["set-cookie"],
-  })
-);
+
+app.use (cors());
+
+// app.use(
+//   cors({
+//     origin: "https://ecommerce-sangam.netlify.app",
+//     methods: ["GET", "PUT", "POST", "OPTIONS", "DELETE", "PATCH"],
+//     allowedHeaders: ["Content-Type", "Authorization", "x-csrf-token"],
+//     credentials: true,
+//     exposedHeaders: ["set-cookie"],
+//   })
+// );
 //------------
 
 //-------------
